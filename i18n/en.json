@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alex Winkler"
+		]
+	},
+	"liquidhackstwitch-desc": "Liquid Hacks Twitch extension",
+
+	"twitchstreams": "Twitch Streams",
+
+	"liquidhackstwitch-add-stream": "[[Special:TwitchStreams/add|Add stream]]",
+	"liquidhackstwitch-delete-stream": "[[Special:TwitchStreams/delete|Delete stream]]",
+	"liquidhackstwitch-see-streams": "[[Special:TwitchStreams|See streams]]",
+
+	"liquidhackstwitch-heading-add-stream": "Add stream",
+	"liquidhackstwitch-heading-delete-stream": "Delete stream",
+	"liquidhackstwitch-button-add-stream": "Add",
+	"liquidhackstwitch-button-delete-stream": "Delete",
+	"liquidhackstwitch-channel": "Channel",
+	"liquidhackstwitch-name": "Name",
+
+	"liquidhackstwitch-error-duplicate": "Duplicate stream"
+}

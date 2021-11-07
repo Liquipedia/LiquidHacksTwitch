@@ -1,0 +1,61 @@
+{
+	"name": "LiquidHacksTwitch",
+	"version": "1.0.0",
+	"author": [
+		"[https://fo-nttax.de Alex Winkler]"
+	],
+	"url": "https://liquipedia.net/",
+	"descriptionmsg": "liquidhackstwitch-desc",
+	"license-name": "MIT",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.35.3"
+	},
+	"ExtensionMessagesFiles": {
+		"LiquidHacksTwitchAlias": "i18n/LiquidHacksTwitchAlias.php"
+	},
+	"MessagesDirs": {
+		"LiquidHacksTwitch": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"Liquipedia\\Extension\\LiquidHacksTwitch\\": "src/"
+	},
+	"SpecialPages": {
+		"TwitchStreams": "\\Liquipedia\\Extension\\LiquidHacksTwitch\\SpecialPage\\SpecialTwitchStreams"
+	},
+	"AvailableRights": [
+		"liquidhackstwitch"
+	],
+	"GroupPermissions": {
+		"user": {
+			"liquidhackstwitch": true
+		}
+	},
+	"Hooks": {
+		"BeforePageDisplay": "Main",
+		"LoadExtensionSchemaUpdates": "Schema",
+		"ParserFirstCallInit": "Main"
+	},
+	"HookHandlers": {
+		"Main": {
+			"class": "\\Liquipedia\\Extension\\LiquidHacksTwitch\\Hooks\\MainHookHandler"
+		},
+		"Schema": {
+			"class": "\\Liquipedia\\Extension\\LiquidHacksTwitch\\Hooks\\SchemaHookHandler"
+		}
+	},
+	"ResourceModules": {
+		"ext.LiquidHacksTwitch.styles": {
+			"styles": [
+				"resources/styles/liquidhackstwitch.css"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "LiquidHacksTwitch"
+	},
+	"manifest_version": 2
+}
